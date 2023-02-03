@@ -1,0 +1,71 @@
+@import 'variables'
+
+// mixis 
+
+@mixin reset
+  * 
+    font-family: 'Lato', sans-serif
+    box-sizing: border-box
+    padding: 0
+    margin: 0
+
+  a
+    text-decoration: none  
+
+  li
+    list-style: none
+
+@mixin main-hover
+  transition: 0.3s
+
+  &:hover
+    color: $primary-color
+
+// Placeholders Selectors
+
+%title-shadow
+  text-shadow: 3px 2px $black
+
+%section-title
+  font-size: 3rem
+  margin: 2rem 
+  text-align: center
+
+%center-bg
+  background-position: center
+  background-size: cover 
+
+%cards-hover
+  .job-card-cover, .job-card
+    opacity: 0
+
+    &:hover
+      opacity: 1
+
+// btns 
+
+.btn
+  padding: .6rem 1rem
+  border: 1px solid $light-color
+  text-transform: uppercase
+  border-radius: 5px
+  transition: .3s
+  color: $light-color
+
+  &:hover
+    border-color: $primary-color
+    color: $primary-color
+
+  &-primary
+    background-color: $primary-color
+    border-color: $primary-color
+
+    &:hover
+      background-color: transparent
+
+
+  &-rounded
+    margin-top: 1rem
+    border-radius: 2rem
+    padding: 1rem 1.5rem
+
